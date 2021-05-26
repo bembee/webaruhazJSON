@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <title>Simon Gergely</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js" type="text/javascript"></script>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Webáruház</h1>
+            </header>
+
+            <article>
+                <div id="tablazat"></div>
+                <div id="tablazatajax"></div>
+                <form>
+                    <fieldset>
+                        <legend>Új termék</legend>
+                        <div>
+                            <label for="termeknev">Termék neve</label>
+                            <input type="text" name="termeknev" id="termeknev"><br>
+                        </div>
+
+                        <div>
+                            <label for="leiras">Leírás</label>
+                            <textarea name="leiras" id="leiras" ></textarea>
+                        </div>
+                        <div>
+                            <label for="keszlet">Darabszám</label>
+                            <input type="text" name="keszlet" id="keszlet" ><br>
+                        </div>
+
+                        <div>
+                            <label for="ar">Ár</label>
+                            <input type="text" name="ar" id="ar" title="Csak számok" ><br>
+                        </div>
+                        <input type="button" id="ok" value="OK">
+                    </fieldset>
+                </form>
+                <input type="button" id="ajax" value="Ajax">
+            </article>
+
+            <footer>
+                <p>Simon Gergely</p>
+            </footer>
+        </main>
+    </body>
+</html>
